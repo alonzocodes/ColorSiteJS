@@ -2,84 +2,53 @@
 
 function myFunction () {
     let color = document.getElementById("myInput").value;
-//Add in toLowerCase 
-if (color === 'red') {    
+    let userInput = color.toLowerCase();
+
+if (userInput === 'red') {    
     text = 'Thats a great color!';
 }
-else if (color === 'blue') {
+    else 
+        if (userInput === 'blue') {
     text = 'That used to be my favorite color too!';
 } 
-else if (color === 'green') {
+    else 
+        if (userInput === 'green') {
     text = 'Like money!';
 }
-else if (color === 'yellow') {
+    else 
+        if (userInput === 'yellow') {
     text = 'Like the sun!';
 }
-else if (color === 'purple') {
+    else 
+        if (userInput === 'purple') {
     text = 'Like the dinosaur';
 }
-else if (color === 'pink') {
+    else 
+        if (userInput === 'pink') {
     text = 'Pink is a beautiful color!';
 }
-else if (color === 'brown') {
+    else 
+        if (userInput === 'brown') {
     text = 'Brown is a nuetral color!';
 }
-else if (color === 'black') {
+    else 
+        if (userInput === 'black') {
     text = 'Black is one of my favorite colors!';
 }
-else if (color === 'teal') {
+    else 
+        if (userInput === 'teal') {
     text = 'Like a blue and green mixed!';
 }
-else if (color === 'white') {
+    else 
+        if (userInput === 'white') {
     text = 'White is a neutral color.';
 }
-else {
+    else {
     text = 'Hmm... I dont have that color listed. Sorry';
 }
-document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo").innerHTML = text;
 
 }
-
-function enterKeyPressed(event) {
-    let numKey = color + event.keyCode;
-    if (event.keyCode == 13) {
-          
-            text = 'Thats a great color!';
-        }
-        else if (color === 'blue') {
-            text = 'That used to be my favorite color too!';
-        } 
-        else if (color === 'green') {
-            text = 'Like money!';
-        }
-        else if (color === 'yellow') {
-            text = 'Like the sun!';
-        }
-        else if (color === 'purple') {
-            text = 'Like the dinosaur';
-        }
-        else if (color === 'pink') {
-            text = 'Pink is a beautiful color!';
-        }
-        else if (color === 'brown') {
-            text = 'Brown is a nuetral color!';
-        }
-        else if (color === 'black') {
-            text = 'Black is one of my favorite colors!';
-        }
-        else if (color === 'teal') {
-            text = 'Like a blue and green mixed!';
-        }
-        else if (color === 'white') {
-            text = 'White is a neutral color.';
-        }
-        else {
-            text = 'Hmm... I dont have that color listed. Sorry';
-        }
-        document.getElementById("demo").innerHTML = text;
- }
-
-    
 
 /* 
 ## I want this program to allow users to enter a color, and the background and font colors change to that color selected and a predetermined matching color scheme.
