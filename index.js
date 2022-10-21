@@ -5,11 +5,11 @@ function myFunction () {
     let userInput = color.toLowerCase();
 
 if (userInput === 'red') {    
-    text = 'Thats a great color!';
+    text = 'Do you like Red circles?';//aniamte red circles
 }
     else 
         if (userInput === 'blue') {
-    text = 'That used to be my favorite color too!';
+    text = 'You typed triangles, yes?';
 } 
     else 
         if (userInput === 'green') {
@@ -42,6 +42,10 @@ if (userInput === 'red') {
     else 
         if (userInput === 'white') {
     text = 'White is a neutral color.';
+}
+    else 
+        if (userInput === 'Orange') {
+    text = 'Vitamin C!';
 }
     else {
     text = 'Hmm... I dont have that color listed. Sorry';
